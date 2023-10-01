@@ -604,3 +604,31 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:gap-20 {
+    gap: 5rem;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:sm\:gap-20 {
+      gap: 5rem;
+    }
+  }
+}
+
+@media not all and (min-width: 640px) {
+  @media (min-width: 640px) {
+    .max-sm\:sm\:gap-20 {
+      gap: 5rem;
+    }
+  }
+}
